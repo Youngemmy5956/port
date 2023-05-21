@@ -366,7 +366,7 @@ export default function Home() {
         </span>
       </section>
 
-      <section className="text-white bg-[#000A2D] pl-96 pb-32 gap-48 flex">
+      <section className="text-white bg-[#000A2D] pl-96 pb-24 gap-48 flex">
         <span className="">
           <span className="pt-20">
             <span className="flex pt-20">
@@ -407,6 +407,9 @@ export default function Home() {
             <img src={phone} alt="" /> +234 905 956 5389
           </p>{" "}
           <br />
+
+          <hr className="bg-[#000A2D] mt-20 w-full" />
+          <p> &copy; 2023 All Rights Reserved.emmanuel</p>
         </span>
 
         <span className="mt-20">
@@ -425,11 +428,8 @@ export default function Home() {
               className="border-4 border-[white] bg-white text-[#943265] rounded-full px-2 py-1" 
               
             /> */}
+         
         </span>
-      </section>
-
-      <section>
-        
       </section>
     </div>
   );
