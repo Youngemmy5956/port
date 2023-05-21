@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.body {
+    margin: 0;
+    background: linear-gradient(to right, #2C2C2C 60%, #691C44 0%);
+    position: relative;
+    height: 79vh;
+}
+.Great{
+    font-family:'Great Vibes', cursive;
+
+  }
+.Inter {
+    font-family: 'Inter', sans-serif;
+}
+/* .body:before {
+    background: #691C44;
+    z-index: -1;
+    right: 50%;
+    position: absolute;
+    content: "";
+} */
