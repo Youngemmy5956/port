@@ -5,9 +5,9 @@
 
 .body {
     margin: 0;
-    background: linear-gradient(to right, #2C2C2C 60%, #691C44 0%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.945)    60%, #691C44 0%);
     position: relative;
-    height: 79vh;
+    height: 81vh;
 }
 .Great{
     font-family:'Great Vibes', cursive;
@@ -16,6 +16,12 @@
 .Inter {
     font-family: 'Inter', sans-serif;
 }
+.main{
+     background: linear-gradient(rgba(0, 0, 0, 0.945) 10%,#010127 90%) ;
+}
+/* .maps{
+    background-image: url(../src/Assets/istockphoto-1300013178-612x612\ 2.svg);
+} */
 /* .body:before {
     background: #691C44;
     z-index: -1;
