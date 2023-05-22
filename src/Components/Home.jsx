@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../Assets/logo.svg";
 import Logo2 from "../Assets/emmy logo 2.svg";
 import emmy from "../Assets/IMG_3638 1.svg";
@@ -28,8 +28,21 @@ import mapin from "../Assets/map-pin.svg";
 import mail from "../Assets/mail.svg";
 import phone from "../Assets/phone-call.svg";
 import arrow2 from "../Assets/Vectora.svg";
+import hero from "../Assets/Rectangle 533.svg";
+import hero1 from "../Assets/Rectangle 553.svg";
+import phones from "../Assets/smartphone.svg";
 
 export default function Home() {
+
+  const [loading, setloading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setloading(false);
+    }, 3500);
+  }, []);
+
+
   let links = [
     { name: "About Me", link: "/" },
     { name: "Services", link: "/" },
@@ -41,6 +54,7 @@ export default function Home() {
 
   return (
     <div>
+      
       <section class="body">
         <div className="md:px-10 py-4 px-7 flex justify-between items-center sticky top-0 z-50">
           <img src={Logo} alt="" className="mx-36" />
@@ -136,6 +150,74 @@ export default function Home() {
             sint. Velit officia consequat duis <br /> enim velit mollit.
             Exercitation veniam consequat sunt nostrud amet.
           </p>
+
+          <span className="flex gap-52">
+          <div className="mt-20">
+            
+            <span>
+            <img src={hero1} alt="" />
+            <img src={hero} alt=""  className="-mt-[242px]"/>
+            </span>
+
+            
+            <span className="mb-40">
+           <img src={phones} alt="" className="-mt-36"  />
+            <p className="font-bold text-[32px] leading-[124%]">App Development</p>
+            <p className="pb-16 font-normal text-[14px] leading-[21px]">Amet minim mollit non deserunt ullamco est sit <br /> aliqua dolor do amet sint. Velit officia consequat <br /> duis enim velit mollit.</p>
+           </span>
+
+          </div>
+
+          <div className="mt-20">
+            
+            <span>
+            <img src={hero1} alt="" />
+            <img src={hero} alt=""  className="-mt-[242px]"/>
+            </span>
+
+            
+            <span className="mb-40">
+           <img src={phones} alt="" className="-mt-36"  />
+            <p className="font-bold text-[32px] leading-[124%]">App Development</p>
+            <p className="pb-16 font-normal text-[14px] leading-[21px]">Amet minim mollit non deserunt ullamco est sit <br /> aliqua dolor do amet sint. Velit officia consequat <br /> duis enim velit mollit.</p>
+           </span>
+
+          </div>
+          </span>
+
+          <span className="flex gap-52">
+          <div className="">
+            
+            <span className="">
+            <img src={hero1} alt="" />
+            <img src={hero} alt=""  className="-mt-[242px]"/>
+            </span>
+
+            
+           <span className="mb-40">
+           <img src={phones} alt="" className="-mt-36"  />
+            <p className="font-bold text-[32px] leading-[124%]">App Development</p>
+            <p className="pb-16 font-normal text-[14px] leading-[21px]">Amet minim mollit non deserunt ullamco est sit <br /> aliqua dolor do amet sint. Velit officia consequat <br /> duis enim velit mollit.</p>
+           </span>
+
+          </div>
+
+          <div className="">
+            
+            <span>
+            <img src={hero1} alt="" />
+            <img src={hero} alt=""  className="-mt-[242px]"/>
+            </span>
+
+            
+            <span className="mb-40">
+           <img src={phones} alt="" className="-mt-36"  />
+            <p className="font-bold text-[32px] leading-[124%]">App Development</p>
+            <p className="pb-16 font-normal text-[14px] leading-[21px]">Amet minim mollit non deserunt ullamco est sit <br /> aliqua dolor do amet sint. Velit officia consequat <br /> duis enim velit mollit.</p>
+           </span>
+
+          </div>
+          </span>
         </section>
       </main>
 
