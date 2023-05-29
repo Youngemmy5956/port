@@ -45,11 +45,11 @@ export default function Home() {
 
   let links = [
     { name: "About Me", link: "/#about" },
-    { name: "Services", link: "/" },
-    { name: "Resume", link: "/" },
+    { name: "Services", link: "/#services" },
+    { name: "Pricing", link: "/#pricing" },
     { name: "Projects", link: "/" },
     { name: "Blog", link: "/" },
-    { name: "Contact Me", link: "/" },
+    { name: "Contact Me", link: "/#contact" },
   ];
 
   return (
@@ -116,8 +116,8 @@ export default function Home() {
             <img src={elispe1} alt="" className="-mt-60" />
           </span>
 
-          <span className="text-white">
-            <p id="about" className="font-bold text-[30px] mt-8 leading-[124%] Inter">
+          <span id="about" className="text-white">
+            <p  className="font-bold text-[30px] mt-8 leading-[124%] Inter">
               About Me
             </p>
             <div className="w-[20%] border-4 border-[#943265]"></div>
@@ -139,7 +139,7 @@ export default function Home() {
           </span>
         </section>
 
-        <section className="text-white mt-40 ml-96">
+        <section id="services" className="text-white mt-40 ml-96">
           <p className="text-[#943265] font-bold text-[20px] leading-[24px]">
             What i do
           </p>
@@ -221,7 +221,7 @@ export default function Home() {
         </section>
       </main>
 
-      <section className="bg-white mt-20 mb-24 ">
+      <section id="pricing" className="bg-white mt-20 mb-24 ">
         <span className="">
           <span className="">
             <p className="text-[#943265] font-bold text-[30px] leading-[130%] ml-96">
@@ -448,7 +448,7 @@ export default function Home() {
         </span>
       </section>
 
-      <section className="text-white bg-[#000A2D] pl-96 pb-24 gap-48 flex">
+      <section id="contact" className="text-white bg-[#000A2D] pl-96 pb-24 gap-48 flex">
         <span className="">
           <span className="pt-20">
             <span className="flex pt-20">
