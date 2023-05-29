@@ -44,7 +44,7 @@ export default function Home() {
 
 
   let links = [
-    { name: "About Me", link: "/" },
+    { name: "About Me", link: "/#about" },
     { name: "Services", link: "/" },
     { name: "Resume", link: "/" },
     { name: "Projects", link: "/" },
@@ -117,7 +117,7 @@ export default function Home() {
           </span>
 
           <span className="text-white">
-            <p className="font-bold text-[30px] mt-8 leading-[124%] Inter">
+            <p id="about" className="font-bold text-[30px] mt-8 leading-[124%] Inter">
               About Me
             </p>
             <div className="w-[20%] border-4 border-[#943265]"></div>
