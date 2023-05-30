@@ -32,11 +32,12 @@ export default function Home() {
           </nav>
         </div>
 
-        <div>
-            <span>
+        <div className='mt-20 w-3/4 ml-48 flex gap-8 h-[80%]'>
+            <div>
+            <span >
                 <img src={image} alt="" />
             </span>
-            <main className='flex gap-10'>
+            <main className='flex gap-44 mt-10'>
             <span>
                 <h1 className='text-7xl font-bold leading-2'>The Bright <br /> Future of <br /> Web 3.0?</h1>
                 
@@ -45,8 +46,58 @@ export default function Home() {
             <span>
                 <h1 className='text-2xl font-normal leading-10'>We dive into the next evolution of the web that <br /> claims to put the power of the platforms back <br /> into the hands of the people. But is it really <br /> fulfilling its promise?</h1>
 
+                <button className='mt-10 border-2 border-black px-10 text-3xl font-normal py-2'>Read More</button>
+
             </span>
             </main>
+            </div>
+
+            <div className='w-1/4 border-2 border-black px-6 '>
+                <span className=''>
+                    <h1 className='mt-10 text-4xl font-bold mb-2'>New</h1>
+                    <h1 className='mb-2 font-bold text-lg'>Hydrogen VS Electric Cars</h1>
+                    <h1 className='mb-4 text-[13px]'> Will hydrogen-fueled cars ever catch up to EVs?</h1>
+
+                       <hr />
+                </span>
+
+                <span className=''>
+                    <h1 className='mb-2 mt-4 font-extrabold text-base'>The Downsides of AI Artistry</h1>
+                    <h1 className='mb-4 text-[13px]'> Will hydrogen-fueled cars ever catch up to EVs?</h1>
+
+                       <hr />
+                </span>
+
+                <span className=''>
+                    <h1 className='mb-2 mt-4 font-bold text-lg'>Is Vc Funding Drying Up?</h1>
+                    <h1 className='mb-4 text-[13px]'>Private funding by VC firms is down 50% YOY. We take a look at what that means. </h1>
+
+                       <hr />
+                </span>
+
+                <span className=''>
+                    <h1 className='mb-2 mt-4 font-extrabold text-base'>The Downsides of AI Artistry</h1>
+                    <h1 className='mb-4 text-[13px]'> Will hydrogen-fueled cars ever catch up to EVs?</h1>
+
+                       <hr />
+                </span>
+
+                <span className=''>
+                    <h1 className='mb-2 mt-4 font-bold text-lg'>Is Vc Funding Drying Up?</h1>
+                    <h1 className='mb-4 text-[13px]'>Private funding by VC firms is down 50% YOY. We take a look at what that means. </h1>
+
+                       <hr />
+                </span>
+                <span className=''>
+                    <h1 className='mb-2 mt-4 font-extrabold text-base'>The Downsides of AI Artistry</h1>
+                    <h1 className='mb-4 text-[13px]'> Will hydrogen-fueled cars ever catch up to EVs?</h1>
+
+                       <hr />
+                </span>
+
+
+               
+            </div>
         </div>
 
 
