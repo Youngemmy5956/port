@@ -57,7 +57,7 @@ export default function Home() {
       
       <section class="body">
         <div className="md:px-10 py-4 px-7 flex justify-between items-center sticky top-0 z-50">
-          <img src={Logo} alt="" className="mx-36" />
+          <img src={Logo} alt="" className="mx-36 animate-spin" />
 
           <nav className="sticky top-0 py-2 z-50 ">
             <ul className="md:flex pl-9 md:pl-0 flex gap-8 z-50">
@@ -75,20 +75,20 @@ export default function Home() {
 
         <main className="flex ml-96 mt-32">
           <span className="">
-            <img src={signeds} alt="" />
-            <p className="font-normal text-[40px] leading[38px] items-center text-[#FFB400] Great">
+            <img src={signeds} alt=""  className="animate-ping"/>
+            <p className="font-normal text-[40px] leading[38px] animate-bounce items-center text-[#FFB400] Great">
               Hello
             </p>
             <p className="font-bold text-[43px] leading-[124%] Inter text-white">
               I’m Nwamini Emmanuel <br /> a{" "}
-              <b className="text-[#FFB400]">Full Stack</b> MERN Developer{" "}
+              <b className="text-[#FFB400] animate-pulse">Full Stack</b> MERN Developer{" "}
             </p>
             <p className="text-[16px] font-normal leading[24%] text-[#E0E0E0] mt-8">
-              <img src={signed} alt="" />
+              <img src={signed} alt="" className="animate-ping"/>
               I’m passionate about building innovative codebased disruptive{" "}
               <br /> web and mobile solutions using stacks like javascript,
               Jquery, <br /> Github, HTML, CSS, PHP etc.{" "}
-              <img src={sign} alt="" />
+              <img src={sign} alt="" className="animate-bounce"/>
             </p>
 
             <button
@@ -97,14 +97,14 @@ export default function Home() {
             >
               Hire Me <img src={arrow} alt="" className="ml-3 mt-3" />{" "}
             </button>
-            <img src={emmys} alt="" />
+            <img src={emmys} alt="" className="animate-ping"/>
           </span>
 
           <span>
-            <img src={sign} alt="" />
-            <img src={emmy} alt="" className="" />
-            <img src={signed} alt="" />
-            <img src={emmys} alt="" className="ml-96" />
+            <img src={sign} alt="" className="animate-bounce"/>
+            <img src={emmy} alt="" className="animate-pulse" />
+            <img src={signed} alt="" className="animate-bounce"/>
+            <img src={emmys} alt="" className="ml-96 animate-bounce" />
           </span>
         </main>
       </section>
