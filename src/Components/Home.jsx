@@ -104,7 +104,7 @@ export default function Home() {
 
                 <button
                   className="text-white font-medium text-[28px] leading-[41px] border-4 
-            border-[#691C44] flex py-2 px-2 mt-14"
+            border-[#691C44] flex py-2 px-2 mt-14 hover:animate-bounce"
                 >
                   Hire Me <img src={arrow} alt="" className="ml-3 mt-3" />{" "}
                 </button>
@@ -122,8 +122,8 @@ export default function Home() {
 
           <main class="main">
             <section className="ml-96 pt-52 gap-32 flex">
-              <span className="">
-                <img src={elispe} alt="" />
+              <span className="hover:animate-bounce">
+                <img src={elispe} alt="" className=""/>
                 <img src={elispe1} alt="" className="-mt-60" />
               </span>
 
@@ -131,7 +131,7 @@ export default function Home() {
                 <p className="font-bold text-[30px] mt-8 leading-[124%] Inter">
                   About Me
                 </p>
-                <div className="w-[20%] border-4 border-[#943265]"></div>
+                <div className="w-[20%] border-4 border-[#943265] animate-bounce"></div>
                 <p className="font-normal text-[20px] leading-[30px] mt-8">
                   I AM NWAMINI EMMANUEL, A Freelancer ,Web-Developer, Software
                   Engineer, <br /> Crypto-Trader and A Teacher . I’m passionate
@@ -164,47 +164,51 @@ export default function Home() {
                 mollit. Exercitation veniam consequat sunt nostrud amet.
               </p>
 
-              <span className="flex gap-52">
-                <div className="mt-20">
-                  <span>
-                    <img src={hero1} alt="" />
-                    <img src={hero} alt="" className="-mt-[242px]" />
-                  </span>
+              <span>
 
-                  <span className="mb-40">
-                    <img src={phones} alt="" className="-mt-36" />
-                    <p className="font-bold text-[32px] leading-[124%]">
-                      App Development
-                    </p>
-                    <p className="pb-16 font-normal text-[14px] leading-[21px]">
-                      Amet minim mollit non deserunt ullamco est sit <br />{" "}
-                      aliqua dolor do amet sint. Velit officia consequat <br />{" "}
-                      duis enim velit mollit.
-                    </p>
-                  </span>
-                </div>
-
-                <div className="mt-20">
-                  <span>
-                    <img src={hero1} alt="" />
-                    <img src={hero} alt="" className="-mt-[242px]" />
-                  </span>
-
-                  <span className="mb-40">
-                    <img src={phones} alt="" className="-mt-36" />
-                    <p className="font-bold text-[32px] leading-[124%]">
-                      App Development
-                    </p>
-                    <p className="pb-16 font-normal text-[14px] leading-[21px]">
-                      Amet minim mollit non deserunt ullamco est sit <br />{" "}
-                      aliqua dolor do amet sint. Velit officia consequat <br />{" "}
-                      duis enim velit mollit.
-                    </p>
-                  </span>
-                </div>
               </span>
 
-              <span className="flex gap-52">
+              {/* <span className="flex gap-52">
+                <div className="mt-20">
+                  <span>
+                    <img src={hero1} alt="" />
+                    <img src={hero} alt="" className="-mt-[242px]" />
+                  </span>
+
+                  <span className="mb-40">
+                    <img src={phones} alt="" className="-mt-36" />
+                    <p className="font-bold text-[32px] leading-[124%]">
+                      App Development
+                    </p>
+                    <p className="pb-16 font-normal text-[14px] leading-[21px]">
+                      Amet minim mollit non deserunt ullamco est sit <br />{" "}
+                      aliqua dolor do amet sint. Velit officia consequat <br />{" "}
+                      duis enim velit mollit.
+                    </p>
+                  </span>
+                </div>
+
+                <div className="mt-20">
+                  <span>
+                    <img src={hero1} alt="" />
+                    <img src={hero} alt="" className="-mt-[242px]" />
+                  </span>
+
+                  <span className="mb-40">
+                    <img src={phones} alt="" className="-mt-36" />
+                    <p className="font-bold text-[32px] leading-[124%]">
+                      App Development
+                    </p>
+                    <p className="pb-16 font-normal text-[14px] leading-[21px]">
+                      Amet minim mollit non deserunt ullamco est sit <br />{" "}
+                      aliqua dolor do amet sint. Velit officia consequat <br />{" "}
+                      duis enim velit mollit.
+                    </p>
+                  </span>
+                </div>
+              </span> */}
+
+              {/* <span className="flex gap-52">
                 <div className="">
                   <span className="">
                     <img src={hero1} alt="" />
@@ -242,7 +246,7 @@ export default function Home() {
                     </p>
                   </span>
                 </div>
-              </span>
+              </span> */}
             </section>
           </main>
 
@@ -484,7 +488,7 @@ export default function Home() {
             <span className="">
               <span className="pt-20">
                 <span className="flex pt-20">
-                  <img src={Logo2} alt="" className="" />
+                  <img src={Logo2} alt="" className="animate-spin" />
                   <p className="font-bold text-[30px] leading-[124%]">
                     EMMYtech
                   </p>
@@ -494,7 +498,7 @@ export default function Home() {
                   dolor do amet sint. Velit officia <br /> consequat duis enim
                   velit mollit.{" "}
                 </p>
-                <span className="flex gap-6 mt-6">
+                <span className="flex gap-6 mt-6 animate-bounce">
                   <img src={face} alt="" />
                   <img src={insta} alt="" />
                   <img src={twit} alt="" />
@@ -509,18 +513,18 @@ export default function Home() {
               <p className="font-bold text-[18px] leading-[124%]">Contact Me</p>
               <p className="flex gap-4 mt-4">
                 {" "}
-                <img src={mapin} alt="" /> 234 Church StreetPort Road, <br />{" "}
+                <img src={mapin} alt="" className="animate-pulse" /> 234 Church StreetPort Road, <br />{" "}
                 Ibadan, Oyo State nigeria
               </p>{" "}
               <br />
               <p className="flex  gap-4">
                 {" "}
-                <img src={mail} alt="" /> nwaminiemmanuel@gmail.com
+                <img src={mail} alt="" className="animate-pulse" /> nwaminiemmanuel@gmail.com
               </p>{" "}
               <br />
               <p className="flex  gap-4">
                 {" "}
-                <img src={phone} alt="" /> +234 905 956 5389
+                <img src={phone} alt="" className="animate-pulse"/> +234 905 956 5389
               </p>{" "}
               <br />
               <hr className="bg-[#000A2D] mt-20 w-full" />
