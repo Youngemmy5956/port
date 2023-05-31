@@ -40,7 +40,7 @@ export default function Home() {
     setloading(true);
     setTimeout(() => {
       setloading(false);
-    }, 3500);
+    }, 5000);
   }, []);
 
   let links = [
@@ -56,7 +56,7 @@ export default function Home() {
     <div>
       {loading ? (
         <ClimbingBoxLoader
-          className="flex justify-center items-center text-center place-content-center mt-[25%] ml-[45%]"
+          className="mt-[23%] ml-[45%]"
           color={"#691C44"}
           loading={loading}
           size={50}
