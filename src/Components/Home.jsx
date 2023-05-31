@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import {AiOutlineGithub} from "react-icons/ai";
+import {GrView} from "react-icons/gr";
 import Logo from "../Assets/logo.svg";
 import Logo2 from "../Assets/emmy logo 2.svg";
 import emmy from "../Assets/IMG_3638 1.svg";
@@ -32,6 +34,12 @@ import arrow2 from "../Assets/Vectora.svg";
 import hero from "../Assets/Rectangle 533.svg";
 import hero1 from "../Assets/Rectangle 553.svg";
 import phones from "../Assets/smartphone.svg";
+import cover from "../Assets/web cover.svg";
+import thumb from "../Assets/Thumbnail.svg";
+import devn from "../Assets/Screenshot (441).png";
+import beere from "../Assets/Screenshot (442).png";
+import newel from "../Assets/Screenshot (443).png";
+import furn from "../Assets/Screenshot (444).png";
 
 export default function Home() {
   const [loading, setloading] = useState(false);
@@ -45,7 +53,7 @@ export default function Home() {
 
   let links = [
     { name: "About Me", link: "/#about" },
-    { name: "Services", link: "/#services" },
+    { name: "Portfolio", link: "/#services" },
     { name: "Pricing", link: "/#pricing" },
     { name: "Projects", link: "/" },
     { name: "Blog", link: "/" },
@@ -89,7 +97,7 @@ export default function Home() {
                 <p className="font-normal text-[40px] leading[38px] animate-bounce items-center text-[#FFB400] Great">
                   Hello
                 </p>
-                <p className="font-bold text-[43px] leading-[124%] Inter text-white">
+                <p className="font-bold text-[43px] leading-[124%] Inter text-white shadow-2xl shadow-black">
                   I’m Nwamini Emmanuel <br /> a{" "}
                   <b className="text-[#FFB400] animate-pulse">Full Stack</b>{" "}
                   MERN Developer{" "}
@@ -123,7 +131,7 @@ export default function Home() {
           <main class="main">
             <section className="ml-96 pt-52 gap-32 flex">
               <span className="hover:animate-bounce">
-                <img src={elispe} alt="" className=""/>
+                <img src={elispe} alt="" className="" />
                 <img src={elispe1} alt="" className="-mt-60" />
               </span>
 
@@ -150,22 +158,189 @@ export default function Home() {
               </span>
             </section>
 
-            <section id="services" className="text-white mt-40 ml-96">
-              <p className="text-[#943265] font-bold text-[20px] leading-[24px]">
+            <section id="services" className="text-white mt-40 ">
+              <p className="text-[#943265] font-bold text-[20px] ml-96 leading-[24px]">
                 What i do
               </p>
-              <p className="font-bold text-[30px] leading-[124%]">
-                My Services
+              <p className="font-bold text-[30px] ml-96 leading-[124%]">
+                My Portfolio
               </p>
-              <div className="w-[5%] border-4 border-[#943265]"></div>
-              <p className="font-normal text-[16px] leading-[24px] pt-8">
+              <div className="w-[5%] border-4 border-[#943265] ml-96"></div>
+              <p className="font-normal text-[16px] ml-96 leading-[24px] pt-8">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis <br /> enim velit
                 mollit. Exercitation veniam consequat sunt nostrud amet.
               </p>
 
-              <span>
+              <span className="w-full flex gap-8 mt-20  px-[200px] ">
+                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                  <img src={cover} alt="" className="w-[100%] h-[40%]" />
+                  <span>
+                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                      Wypa cleaning service
+                    </h1>
+                    <h1 className="text-white text-xl mt-6">
+                      A fully mobile responsive web dashboard built with react,
+                      typescript, tailwind and redux for state management.
+                    </h1>
+                    <h1 className="text-white text-xl mt-8 text-center">
+                      React | Redux | Tailwind
+                    </h1>
+                  </span>
 
+                  <span className="gap-10 flex justify-center">
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <AiOutlineGithub className="mt-[6px]"/>
+                      View code
+                    </button>
+
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <GrView className="mt-[6px]"/>
+                      View Live
+                    </button>
+                  </span>
+                </div>
+
+                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                  <img src={thumb} alt="" className="w-[100%] h-[40%]" />
+                  <span>
+                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                      Wypa cleaning service
+                    </h1>
+                    <h1 className="text-white text-xl mt-6">
+                      A fully mobile responsive web dashboard built with react,
+                      typescript, tailwind and redux for state management.
+                    </h1>
+                    <h1 className="text-white text-xl mt-8 text-center">
+                      React | Redux | Tailwind
+                    </h1>
+                  </span>
+
+                  <span className="gap-10 flex  justify-center">
+                  <button className="mt-10 border-4  gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <AiOutlineGithub className="mt-[6px]"/>
+                      View code
+                    </button>
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <GrView className="mt-[6px]"/>
+                      View Live
+                    </button>
+                  </span>
+                </div>
+
+                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                  <img src={devn} alt="" className="w-[100%] h-[40%]" />
+                  <span>
+                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                      Wypa cleaning service
+                    </h1>
+                    <h1 className="text-white text-xl mt-6">
+                      A fully mobile responsive web dashboard built with react,
+                      typescript, tailwind and redux for state management.
+                    </h1>
+                    <h1 className="text-white text-xl mt-8 text-center">
+                      React | Redux | Tailwind
+                    </h1>
+
+                    <span className="gap-10 flex justify-center">
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <AiOutlineGithub className="mt-[6px]"/>
+                      View code
+                    </button>
+
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <GrView className="mt-[6px]"/>
+                      View Live
+                    </button>
+                    </span>
+                  </span>
+                </div>
+              </span>
+
+              <span className="w-full flex gap-8 mt-20  px-[200px] pb-10">
+                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                  <img src={beere} alt="" className="w-[100%] h-[40%]"/>
+                  <span>
+                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                      Wypa cleaning service
+                    </h1>
+                    <h1 className="text-white text-xl mt-6">
+                      A fully mobile responsive web dashboard built with react,
+                      typescript, tailwind and redux for state management.
+                    </h1>
+                    <h1 className="text-white text-xl mt-8 text-center">
+                      React | Redux | Tailwind
+                    </h1>
+
+                    <span className="gap-10 flex justify-center">
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <AiOutlineGithub className="mt-[6px]"/>
+                      View code
+                    </button>
+
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <GrView className="mt-[6px]"/>
+                      View Live
+                    </button>
+                    </span>
+                  </span>
+                </div>
+
+                <div className="lg:w-1/3  border-white border-4 px-4 py-6">
+                  <img src={newel} alt="" className="w-[100%] h-[40%]" />
+                  <span>
+                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                      Wypa cleaning service
+                    </h1>
+                    <h1 className="text-white text-xl mt-6">
+                      A fully mobile responsive web dashboard built with react,
+                      typescript, tailwind and redux for state management.
+                    </h1>
+                    <h1 className="text-white text-xl mt-8 text-center">
+                      React | Redux | Tailwind
+                    </h1>
+
+                    <span className="gap-10 flex justify-center">
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <AiOutlineGithub className="mt-[6px]"/>
+                      View code
+                    </button>
+
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <GrView className="mt-[6px]"/>
+                      View Live
+                    </button>
+                    </span>
+                  </span>
+                </div>
+
+                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                  <img src={furn} alt="" className="w-[100%] h-[40%]" />
+                  <span>
+                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                      Wypa cleaning service
+                    </h1>
+                    <h1 className="text-white text-xl mt-6">
+                      A fully mobile responsive web dashboard built with react,
+                      typescript, tailwind and redux for state management.
+                    </h1>
+                    <h1 className="text-white text-xl mt-8 text-center">
+                      React | Redux | Tailwind
+                    </h1>
+
+                    <span className="gap-10 flex justify-center">
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <AiOutlineGithub className="mt-[6px]"/>
+                      View code
+                    </button>
+
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
+                    <GrView className="mt-[6px]"/>
+                      View Live
+                    </button>
+                    </span>
+                  </span>
+                </div>
               </span>
 
               {/* <span className="flex gap-52">
@@ -513,18 +688,20 @@ export default function Home() {
               <p className="font-bold text-[18px] leading-[124%]">Contact Me</p>
               <p className="flex gap-4 mt-4">
                 {" "}
-                <img src={mapin} alt="" className="animate-pulse" /> 234 Church StreetPort Road, <br />{" "}
-                Ibadan, Oyo State nigeria
+                <img src={mapin} alt="" className="animate-pulse" /> 234 Church
+                StreetPort Road, <br /> Ibadan, Oyo State nigeria
               </p>{" "}
               <br />
               <p className="flex  gap-4">
                 {" "}
-                <img src={mail} alt="" className="animate-pulse" /> nwaminiemmanuel@gmail.com
+                <img src={mail} alt="" className="animate-pulse" />{" "}
+                nwaminiemmanuel@gmail.com
               </p>{" "}
               <br />
               <p className="flex  gap-4">
                 {" "}
-                <img src={phone} alt="" className="animate-pulse"/> +234 905 956 5389
+                <img src={phone} alt="" className="animate-pulse" /> +234 905
+                956 5389
               </p>{" "}
               <br />
               <hr className="bg-[#000A2D] mt-20 w-full" />
