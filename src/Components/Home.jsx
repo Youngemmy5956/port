@@ -461,8 +461,6 @@ export default function Home() {
 
             <img src={maps} alt=" " className="ml-[500px]" />
 
-            <Carousel className="rounded-xl">
-
             <span className="w-full flex gap-8 px-[200px] -mt-[500px] ">
               <div className="lg:w-1/3 border-[#943265]  border-4 px-4 py-6">
                 <img src={thumb} alt="" className="w-[100%] h-[40%]" />
@@ -538,8 +536,7 @@ export default function Home() {
                 </span>
               </div>
             </span>
-
-            </Carousel>
+         
 
             {/* <span className="flex gap-10 -mt-[500px] ml-96 text-white">
               <div className="bg-[#000A2C] w-[25%] h-[20%]">
