@@ -349,11 +349,6 @@ export default function Home() {
                   </span>
                 </div>
               </span>
-
-              
-          {/* <img src={cover} alt="" />
-          <img src={cover} alt="" />
-          <img src={cover} alt="" /> */}
     </Carousel>
 
               {/* <span className="flex gap-52">
