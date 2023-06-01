@@ -364,14 +364,7 @@ export default function Home() {
                 </p>
                 <div className="w-[5%] border-4 border-[#943265] mt-2 ml-96"></div>
               </span>
-              {/* <span className="flex flex-col">
-                <button className="font-bold ml-96 -mb-80 text-[#FFB400] border-4 rounded border-white text-[20px] leading-6">
-                  <button className="bg-[#FFB400] font-bold text-[20px] leading-6 px-6 py-1 text-white rounded-full ">
-                    Monthly
-                  </button>
-                  Yearly
-                </button>
-              </span> */}
+              
             </span>
 
             
@@ -392,10 +385,7 @@ export default function Home() {
                 </span>
 
                 <span className="gap-10 flex justify-center">
-                  {/* <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                      <AiOutlineGithub className="mt-[6px]" />
-                      View code
-                    </button> */}
+                  
 
                   <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                     <GrView className="mt-[6px]" />
@@ -417,10 +407,7 @@ export default function Home() {
                 </span>
 
                 <span className="gap-10 flex  justify-center">
-                  {/* <button className="mt-10 border-4  gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                      <AiOutlineGithub className="mt-[6px]" />
-                      View code
-                    </button> */}
+                 
                   <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                     <GrView className="mt-[6px]" />
                     View
@@ -440,10 +427,7 @@ export default function Home() {
                   </h1>
 
                   <span className="gap-10 flex justify-center">
-                    {/* <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                        <AiOutlineGithub className="mt-[6px]" />
-                        View code
-                      </button> */}
+                    
 
                     <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                       <GrView className="mt-[6px]" />
