@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-import {AiOutlineGithub} from "react-icons/ai";
-import {GrView} from "react-icons/gr";
+import { AiOutlineGithub } from "react-icons/ai";
+import { GrView } from "react-icons/gr";
 import Logo from "../Assets/logo.svg";
 import Logo2 from "../Assets/emmy logo 2.svg";
 import emmy from "../Assets/IMG_3638 1.svg";
@@ -40,6 +40,9 @@ import devn from "../Assets/Screenshot (441).png";
 import beere from "../Assets/Screenshot (442).png";
 import newel from "../Assets/Screenshot (443).png";
 import furn from "../Assets/Screenshot (444).png";
+import redt from "../Assets/Rectangle 46.svg";
+import ReactPaginate from "react-paginate";
+import { Carousel } from "@material-tailwind/react";
 
 export default function Home() {
   const [loading, setloading] = useState(false);
@@ -51,12 +54,14 @@ export default function Home() {
     }, 5000);
   }, []);
 
+
+
   let links = [
     { name: "About Me", link: "/#about" },
     { name: "Portfolio", link: "/#services" },
     { name: "Pricing", link: "/#pricing" },
-    { name: "Projects", link: "/" },
-    { name: "Blog", link: "/" },
+    { name: "Projects", link: "/#services" },
+    { name: "Blog", link: "/#pricing" },
     { name: "Contact Me", link: "/#contact" },
   ];
 
@@ -97,7 +102,7 @@ export default function Home() {
                 <p className="font-normal text-[40px] leading[38px] animate-bounce items-center text-[#FFB400] Great">
                   Hello
                 </p>
-                <p className="font-bold text-[43px] leading-[124%] Inter text-white shadow-2xl shadow-black">
+                <p className="font-bold text-[43px] leading-[124%] Inter text-white shadow-2xl">
                   I’m Nwamini Emmanuel <br /> a{" "}
                   <b className="text-[#FFB400] animate-pulse">Full Stack</b>{" "}
                   MERN Developer{" "}
@@ -172,6 +177,8 @@ export default function Home() {
                 mollit. Exercitation veniam consequat sunt nostrud amet.
               </p>
 
+              <Carousel className="rounded-xl">
+
               <span className="w-full flex gap-8 mt-20  px-[200px] ">
                 <div className="lg:w-1/3 border-white border-4 px-4 py-6">
                   <img src={cover} alt="" className="w-[100%] h-[40%]" />
@@ -189,13 +196,13 @@ export default function Home() {
                   </span>
 
                   <span className="gap-10 flex justify-center">
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <AiOutlineGithub className="mt-[6px]"/>
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                      <AiOutlineGithub className="mt-[6px]" />
                       View code
                     </button>
 
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <GrView className="mt-[6px]"/>
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                      <GrView className="mt-[6px]" />
                       View Live
                     </button>
                   </span>
@@ -217,12 +224,12 @@ export default function Home() {
                   </span>
 
                   <span className="gap-10 flex  justify-center">
-                  <button className="mt-10 border-4  gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <AiOutlineGithub className="mt-[6px]"/>
+                    <button className="mt-10 border-4  gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                      <AiOutlineGithub className="mt-[6px]" />
                       View code
                     </button>
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <GrView className="mt-[6px]"/>
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                      <GrView className="mt-[6px]" />
                       View Live
                     </button>
                   </span>
@@ -243,15 +250,15 @@ export default function Home() {
                     </h1>
 
                     <span className="gap-10 flex justify-center">
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <AiOutlineGithub className="mt-[6px]"/>
-                      View code
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <AiOutlineGithub className="mt-[6px]" />
+                        View code
+                      </button>
 
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <GrView className="mt-[6px]"/>
-                      View Live
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <GrView className="mt-[6px]" />
+                        View Live
+                      </button>
                     </span>
                   </span>
                 </div>
@@ -259,7 +266,7 @@ export default function Home() {
 
               <span className="w-full flex gap-8 mt-20  px-[200px] pb-10">
                 <div className="lg:w-1/3 border-white border-4 px-4 py-6">
-                  <img src={beere} alt="" className="w-[100%] h-[40%]"/>
+                  <img src={beere} alt="" className="w-[100%] h-[40%]" />
                   <span>
                     <h1 className="text-white text-2xl mt-4 text-center font-bold">
                       Wypa cleaning service
@@ -273,15 +280,15 @@ export default function Home() {
                     </h1>
 
                     <span className="gap-10 flex justify-center">
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <AiOutlineGithub className="mt-[6px]"/>
-                      View code
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <AiOutlineGithub className="mt-[6px]" />
+                        View code
+                      </button>
 
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <GrView className="mt-[6px]"/>
-                      View Live
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <GrView className="mt-[6px]" />
+                        View Live
+                      </button>
                     </span>
                   </span>
                 </div>
@@ -301,15 +308,15 @@ export default function Home() {
                     </h1>
 
                     <span className="gap-10 flex justify-center">
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <AiOutlineGithub className="mt-[6px]"/>
-                      View code
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <AiOutlineGithub className="mt-[6px]" />
+                        View code
+                      </button>
 
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <GrView className="mt-[6px]"/>
-                      View Live
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <GrView className="mt-[6px]" />
+                        View Live
+                      </button>
                     </span>
                   </span>
                 </div>
@@ -329,19 +336,25 @@ export default function Home() {
                     </h1>
 
                     <span className="gap-10 flex justify-center">
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <AiOutlineGithub className="mt-[6px]"/>
-                      View code
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <AiOutlineGithub className="mt-[6px]" />
+                        View code
+                      </button>
 
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex"> 
-                    <GrView className="mt-[6px]"/>
-                      View Live
-                    </button>
+                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <GrView className="mt-[6px]" />
+                        View Live
+                      </button>
                     </span>
                   </span>
                 </div>
               </span>
+
+              
+          {/* <img src={cover} alt="" />
+          <img src={cover} alt="" />
+          <img src={cover} alt="" /> */}
+    </Carousel>
 
               {/* <span className="flex gap-52">
                 <div className="mt-20">
@@ -425,27 +438,110 @@ export default function Home() {
             </section>
           </main>
 
-          <section id="pricing" className="bg-white mt-20 mb-24 ">
+          <section id="pricing" className="bg-black [#040420] pt-20 pb-24 ">
             <span className="">
               <span className="">
-                <p className="text-[#943265] font-bold text-[30px] leading-[130%] ml-96">
-                  Check Out Our <br /> Pricing Packages
+                <p className="text-white font-bold text-[30px] leading-[130%] ml-96">
+                  Check Out Our <br />
+                  News Blog
                 </p>
-                <div className="w-[5%] border-4 border-[#FFB400] mt-2 ml-96"></div>
+                <div className="w-[5%] border-4 border-[#943265] mt-2 ml-96"></div>
               </span>
-              <span className="flex flex-col">
+              {/* <span className="flex flex-col">
                 <button className="font-bold ml-96 -mb-80 text-[#FFB400] border-4 rounded border-white text-[20px] leading-6">
                   <button className="bg-[#FFB400] font-bold text-[20px] leading-6 px-6 py-1 text-white rounded-full ">
                     Monthly
                   </button>
                   Yearly
                 </button>
-              </span>
+              </span> */}
             </span>
+
+            
 
             <img src={maps} alt=" " className="ml-[500px]" />
 
-            <span className="flex gap-10 -mt-[500px] ml-96 text-white">
+            <Carousel className="rounded-xl">
+
+            <span className="w-full flex gap-8 px-[200px] -mt-[500px] ">
+              <div className="lg:w-1/3 border-[#943265]  border-4 px-4 py-6">
+                <img src={thumb} alt="" className="w-[100%] h-[40%]" />
+                <span>
+                  <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                    Wypa cleaning service
+                  </h1>
+                  <h1 className="text-white text-xl mt-6">
+                    A fully mobile responsive web dashboard built with react,
+                    typescript, tailwind and redux for state management.
+                  </h1>
+                </span>
+
+                <span className="gap-10 flex justify-center">
+                  {/* <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                      <AiOutlineGithub className="mt-[6px]" />
+                      View code
+                    </button> */}
+
+                  <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                    <GrView className="mt-[6px]" />
+                    View
+                  </button>
+                </span>
+              </div>
+
+              <div className="lg:w-1/3 border-[#943265]  border-4 px-4 py-6">
+                <img src={thumb} alt="" className="w-[100%] h-[40%]" />
+                <span>
+                  <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                    Wypa cleaning service
+                  </h1>
+                  <h1 className="text-white text-xl mt-6">
+                    A fully mobile responsive web dashboard built with react,
+                    typescript, tailwind and redux for state management.
+                  </h1>
+                </span>
+
+                <span className="gap-10 flex  justify-center">
+                  {/* <button className="mt-10 border-4  gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                      <AiOutlineGithub className="mt-[6px]" />
+                      View code
+                    </button> */}
+                  <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                    <GrView className="mt-[6px]" />
+                    View
+                  </button>
+                </span>
+              </div>
+
+              <div className="lg:w-1/3 border-[#943265] border-4 px-4 py-6 ">
+                <img src={thumb} alt="" className="w-[100%] h-[40%]" />
+                <span>
+                  <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                    Wypa cleaning service
+                  </h1>
+                  <h1 className="text-white text-xl mt-6">
+                    A fully mobile responsive web dashboard built with react,
+                    typescript, tailwind and redux for state management.
+                  </h1>
+
+                  <span className="gap-10 flex justify-center">
+                    {/* <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                        <AiOutlineGithub className="mt-[6px]" />
+                        View code
+                      </button> */}
+
+                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                      <GrView className="mt-[6px]" />
+                      View
+                    </button>
+                  </span>
+                </span>
+              </div>
+            </span>
+
+            </Carousel>
+
+            {/* <span className="flex gap-10 -mt-[500px] ml-96 text-white">
               <div className="bg-[#000A2C] w-[25%] h-[20%]">
                 <span className="flex px-2 py-8 gap-6">
                   <img src={bronze} alt="" className="pb-[500px]" />
@@ -653,7 +749,7 @@ export default function Home() {
                   </span>
                 </span>
               </div>
-            </span>
+            </span> */}
           </section>
 
           <section
