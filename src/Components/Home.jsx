@@ -54,8 +54,6 @@ export default function Home() {
     }, 5000);
   }, []);
 
-
-
   let links = [
     { name: "About Me", link: "/#about" },
     { name: "Portfolio", link: "/#services" },
@@ -178,76 +176,22 @@ export default function Home() {
               </p>
 
               <Carousel className="rounded-xl">
-
-              <span className="w-full flex gap-8 mt-20  px-[200px] ">
-                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
-                  <img src={cover} alt="" className="w-[100%] h-[40%]" />
-                  <span>
-                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
-                      Wypa cleaning service
-                    </h1>
-                    <h1 className="text-white text-xl mt-6">
-                      A fully mobile responsive web dashboard built with react,
-                      typescript, tailwind and redux for state management.
-                    </h1>
-                    <h1 className="text-white text-xl mt-8 text-center">
-                      React | Redux | Tailwind
-                    </h1>
-                  </span>
-
-                  <span className="gap-10 flex justify-center">
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                      <AiOutlineGithub className="mt-[6px]" />
-                      View code
-                    </button>
-
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                      <GrView className="mt-[6px]" />
-                      View Live
-                    </button>
-                  </span>
-                </div>
-
-                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
-                  <img src={thumb} alt="" className="w-[100%] h-[40%]" />
-                  <span>
-                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
-                      Wypa cleaning service
-                    </h1>
-                    <h1 className="text-white text-xl mt-6">
-                      A fully mobile responsive web dashboard built with react,
-                      typescript, tailwind and redux for state management.
-                    </h1>
-                    <h1 className="text-white text-xl mt-8 text-center">
-                      React | Redux | Tailwind
-                    </h1>
-                  </span>
-
-                  <span className="gap-10 flex  justify-center">
-                    <button className="mt-10 border-4  gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                      <AiOutlineGithub className="mt-[6px]" />
-                      View code
-                    </button>
-                    <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                      <GrView className="mt-[6px]" />
-                      View Live
-                    </button>
-                  </span>
-                </div>
-
-                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
-                  <img src={devn} alt="" className="w-[100%] h-[40%]" />
-                  <span>
-                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
-                      Wypa cleaning service
-                    </h1>
-                    <h1 className="text-white text-xl mt-6">
-                      A fully mobile responsive web dashboard built with react,
-                      typescript, tailwind and redux for state management.
-                    </h1>
-                    <h1 className="text-white text-xl mt-8 text-center">
-                      React | Redux | Tailwind
-                    </h1>
+                <span className="w-full flex gap-8 mt-20  px-[200px] ">
+                  <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                    <img src={cover} alt="" className="w-[100%] h-[40%]" />
+                    <span>
+                      <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                        Wypa cleaning service
+                      </h1>
+                      <h1 className="text-white text-xl mt-6">
+                        A fully mobile responsive web dashboard built with
+                        react, typescript, tailwind and redux for state
+                        management.
+                      </h1>
+                      <h1 className="text-white text-xl mt-8 text-center">
+                        React | Redux | Tailwind
+                      </h1>
+                    </span>
 
                     <span className="gap-10 flex justify-center">
                       <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
@@ -260,98 +204,155 @@ export default function Home() {
                         View Live
                       </button>
                     </span>
-                  </span>
-                </div>
-              </span>
+                  </div>
 
-              <span className="w-full flex gap-8 mt-20  px-[200px] pb-10">
-                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
-                  <img src={beere} alt="" className="w-[100%] h-[40%]" />
-                  <span>
-                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
-                      Wypa cleaning service
-                    </h1>
-                    <h1 className="text-white text-xl mt-6">
-                      A fully mobile responsive web dashboard built with react,
-                      typescript, tailwind and redux for state management.
-                    </h1>
-                    <h1 className="text-white text-xl mt-8 text-center">
-                      React | Redux | Tailwind
-                    </h1>
+                  <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                    <img src={thumb} alt="" className="w-[100%] h-[40%]" />
+                    <span>
+                      <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                        Wypa cleaning service
+                      </h1>
+                      <h1 className="text-white text-xl mt-6">
+                        A fully mobile responsive web dashboard built with
+                        react, typescript, tailwind and redux for state
+                        management.
+                      </h1>
+                      <h1 className="text-white text-xl mt-8 text-center">
+                        React | Redux | Tailwind
+                      </h1>
+                    </span>
 
-                    <span className="gap-10 flex justify-center">
-                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                    <span className="gap-10 flex  justify-center">
+                      <button className="mt-10 border-4  gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                         <AiOutlineGithub className="mt-[6px]" />
                         View code
                       </button>
-
                       <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                         <GrView className="mt-[6px]" />
                         View Live
                       </button>
                     </span>
-                  </span>
-                </div>
+                  </div>
 
-                <div className="lg:w-1/3  border-white border-4 px-4 py-6">
-                  <img src={newel} alt="" className="w-[100%] h-[40%]" />
-                  <span>
-                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
-                      Wypa cleaning service
-                    </h1>
-                    <h1 className="text-white text-xl mt-6">
-                      A fully mobile responsive web dashboard built with react,
-                      typescript, tailwind and redux for state management.
-                    </h1>
-                    <h1 className="text-white text-xl mt-8 text-center">
-                      React | Redux | Tailwind
-                    </h1>
+                  <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                    <img src={devn} alt="" className="w-[100%] h-[40%]" />
+                    <span>
+                      <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                        Wypa cleaning service
+                      </h1>
+                      <h1 className="text-white text-xl mt-6">
+                        A fully mobile responsive web dashboard built with
+                        react, typescript, tailwind and redux for state
+                        management.
+                      </h1>
+                      <h1 className="text-white text-xl mt-8 text-center">
+                        React | Redux | Tailwind
+                      </h1>
 
-                    <span className="gap-10 flex justify-center">
-                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                        <AiOutlineGithub className="mt-[6px]" />
-                        View code
-                      </button>
+                      <span className="gap-10 flex justify-center">
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <AiOutlineGithub className="mt-[6px]" />
+                          View code
+                        </button>
 
-                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                        <GrView className="mt-[6px]" />
-                        View Live
-                      </button>
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <GrView className="mt-[6px]" />
+                          View Live
+                        </button>
+                      </span>
                     </span>
-                  </span>
-                </div>
+                  </div>
+                </span>
 
-                <div className="lg:w-1/3 border-white border-4 px-4 py-6">
-                  <img src={furn} alt="" className="w-[100%] h-[40%]" />
-                  <span>
-                    <h1 className="text-white text-2xl mt-4 text-center font-bold">
-                      Wypa cleaning service
-                    </h1>
-                    <h1 className="text-white text-xl mt-6">
-                      A fully mobile responsive web dashboard built with react,
-                      typescript, tailwind and redux for state management.
-                    </h1>
-                    <h1 className="text-white text-xl mt-8 text-center">
-                      React | Redux | Tailwind
-                    </h1>
+                <span className="w-full flex gap-8 mt-20  px-[200px] pb-10">
+                  <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                    <img src={beere} alt="" className="w-[100%] h-[40%]" />
+                    <span>
+                      <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                        Wypa cleaning service
+                      </h1>
+                      <h1 className="text-white text-xl mt-6">
+                        A fully mobile responsive web dashboard built with
+                        react, typescript, tailwind and redux for state
+                        management.
+                      </h1>
+                      <h1 className="text-white text-xl mt-8 text-center">
+                        React | Redux | Tailwind
+                      </h1>
 
-                    <span className="gap-10 flex justify-center">
-                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                        <AiOutlineGithub className="mt-[6px]" />
-                        View code
-                      </button>
+                      <span className="gap-10 flex justify-center">
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <AiOutlineGithub className="mt-[6px]" />
+                          View code
+                        </button>
 
-                      <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
-                        <GrView className="mt-[6px]" />
-                        View Live
-                      </button>
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <GrView className="mt-[6px]" />
+                          View Live
+                        </button>
+                      </span>
                     </span>
-                  </span>
-                </div>
-              </span>
-    </Carousel>
+                  </div>
 
-            
+                  <div className="lg:w-1/3  border-white border-4 px-4 py-6">
+                    <img src={newel} alt="" className="w-[100%] h-[40%]" />
+                    <span>
+                      <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                        Wypa cleaning service
+                      </h1>
+                      <h1 className="text-white text-xl mt-6">
+                        A fully mobile responsive web dashboard built with
+                        react, typescript, tailwind and redux for state
+                        management.
+                      </h1>
+                      <h1 className="text-white text-xl mt-8 text-center">
+                        React | Redux | Tailwind
+                      </h1>
+
+                      <span className="gap-10 flex justify-center">
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <AiOutlineGithub className="mt-[6px]" />
+                          View code
+                        </button>
+
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <GrView className="mt-[6px]" />
+                          View Live
+                        </button>
+                      </span>
+                    </span>
+                  </div>
+
+                  <div className="lg:w-1/3 border-white border-4 px-4 py-6">
+                    <img src={furn} alt="" className="w-[100%] h-[40%]" />
+                    <span>
+                      <h1 className="text-white text-2xl mt-4 text-center font-bold">
+                        Wypa cleaning service
+                      </h1>
+                      <h1 className="text-white text-xl mt-6">
+                        A fully mobile responsive web dashboard built with
+                        react, typescript, tailwind and redux for state
+                        management.
+                      </h1>
+                      <h1 className="text-white text-xl mt-8 text-center">
+                        React | Redux | Tailwind
+                      </h1>
+
+                      <span className="gap-10 flex justify-center">
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <AiOutlineGithub className="mt-[6px]" />
+                          View code
+                        </button>
+
+                        <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
+                          <GrView className="mt-[6px]" />
+                          View Live
+                        </button>
+                      </span>
+                    </span>
+                  </div>
+                </span>
+              </Carousel>
             </section>
           </main>
 
@@ -364,10 +365,7 @@ export default function Home() {
                 </p>
                 <div className="w-[5%] border-4 border-[#943265] mt-2 ml-96"></div>
               </span>
-              
             </span>
-
-            
 
             <img src={maps} alt=" " className="ml-[500px]" />
 
@@ -385,8 +383,6 @@ export default function Home() {
                 </span>
 
                 <span className="gap-10 flex justify-center">
-                  
-
                   <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                     <GrView className="mt-[6px]" />
                     View
@@ -407,7 +403,6 @@ export default function Home() {
                 </span>
 
                 <span className="gap-10 flex  justify-center">
-                 
                   <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                     <GrView className="mt-[6px]" />
                     View
@@ -427,8 +422,6 @@ export default function Home() {
                   </h1>
 
                   <span className="gap-10 flex justify-center">
-                    
-
                     <button className="mt-10 border-4 gap-2 border-[#943265] px-4 py-2 bg-[#943265] rounded-lg font-medium text-[20px] flex">
                       <GrView className="mt-[6px]" />
                       View
@@ -437,217 +430,6 @@ export default function Home() {
                 </span>
               </div>
             </span>
-         
-
-            {/* <span className="flex gap-10 -mt-[500px] ml-96 text-white">
-              <div className="bg-[#000A2C] w-[25%] h-[20%]">
-                <span className="flex px-2 py-8 gap-6">
-                  <img src={bronze} alt="" className="pb-[500px]" />
-                  <span className="mt-4">
-                    <p className="font-bold text-[30px] leading-5">
-                      Bronze Plan
-                    </p>
-                    <p className="font-normal text-[60px] leading-[130%]">
-                      $150.00
-                    </p>
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        UI Design
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        web development
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        Logo development
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />5 Websites
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        unlimited user
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        20 gB bandwith
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <button className="mt-10 px-6 py-2 bg-[#EA1383] border border-[#EA1383] ml-[60px] rounded-full">
-                      Popular
-                    </button>
-                  </span>
-                </span>
-              </div>
-
-              <div className="bg-[#EA1383] w-[25%] h-[20%]">
-                <span className="flex px-2 py-8 gap-6">
-                  <img src={silver} alt="" className="pb-[500px]" />
-                  <span className="mt-4">
-                    <p className="font-bold text-[30px] leading-5">
-                      Silver Plan
-                    </p>
-                    <p className="font-normal text-[60px] leading-[130%]">
-                      $150.00
-                    </p>
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        UI Design
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        web development
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        Logo development
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />5 Websites
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        unlimited user
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        20 gB bandwith
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <button className="mt-10 px-6 py-2 bg-[#000A2C] border border-[#EA1383] ml-[60px] rounded-full">
-                      Popular
-                    </button>
-                  </span>
-                </span>
-              </div>
-
-              <div className="bg-[#000A2C] w-[25%] h-[20%]">
-                <span className="flex px-2 py-8 gap-6">
-                  <img src={gold} alt="" className="pb-[500px]" />
-                  <span className="mt-4">
-                    <p className="font-bold text-[30px] leading-5">Gold Plan</p>
-                    <p className="font-normal text-[60px] leading-[130%]">
-                      $150.00
-                    </p>
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        UI Design
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        web development
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        Logo development
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />5 Websites
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        unlimited user
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <span className="">
-                      <p className="flex mt-10 gap-4 text-[20px]">
-                        {" "}
-                        <img src={ckeck} alt="" />
-                        20 gB bandwith
-                      </p>
-                      <hr className="w-full" />
-                    </span>
-
-                    <button className="mt-10 px-6 py-2 bg-[#EA1383] border border-[#EA1383] ml-[60px] rounded-full">
-                      Popular
-                    </button>
-                  </span>
-                </span>
-              </div>
-            </span> */}
           </section>
 
           <section

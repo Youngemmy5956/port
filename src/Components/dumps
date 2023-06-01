@@ -88,3 +88,217 @@
                   Yearly
                 </button>
               </span> */} -->
+
+                        
+
+                 <!-- pricing plans card -->
+
+              <!-- {/* <span className="flex gap-10 -mt-[500px] ml-96 text-white">
+                <div className="bg-[#000A2C] w-[25%] h-[20%]">
+                  <span className="flex px-2 py-8 gap-6">
+                    <img src={bronze} alt="" className="pb-[500px]" />
+                    <span className="mt-4">
+                      <p className="font-bold text-[30px] leading-5">
+                        Bronze Plan
+                      </p>
+                      <p className="font-normal text-[60px] leading-[130%]">
+                        $150.00
+                      </p>
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          UI Design
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          web development
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          Logo development
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />5 Websites
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          unlimited user
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          20 gB bandwith
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <button className="mt-10 px-6 py-2 bg-[#EA1383] border border-[#EA1383] ml-[60px] rounded-full">
+                        Popular
+                      </button>
+                    </span>
+                  </span>
+                </div>
+  
+                <div className="bg-[#EA1383] w-[25%] h-[20%]">
+                  <span className="flex px-2 py-8 gap-6">
+                    <img src={silver} alt="" className="pb-[500px]" />
+                    <span className="mt-4">
+                      <p className="font-bold text-[30px] leading-5">
+                        Silver Plan
+                      </p>
+                      <p className="font-normal text-[60px] leading-[130%]">
+                        $150.00
+                      </p>
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          UI Design
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          web development
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          Logo development
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />5 Websites
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          unlimited user
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          20 gB bandwith
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <button className="mt-10 px-6 py-2 bg-[#000A2C] border border-[#EA1383] ml-[60px] rounded-full">
+                        Popular
+                      </button>
+                    </span>
+                  </span>
+                </div>
+  
+                <div className="bg-[#000A2C] w-[25%] h-[20%]">
+                  <span className="flex px-2 py-8 gap-6">
+                    <img src={gold} alt="" className="pb-[500px]" />
+                    <span className="mt-4">
+                      <p className="font-bold text-[30px] leading-5">Gold Plan</p>
+                      <p className="font-normal text-[60px] leading-[130%]">
+                        $150.00
+                      </p>
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          UI Design
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          web development
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          Logo development
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />5 Websites
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          unlimited user
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <span className="">
+                        <p className="flex mt-10 gap-4 text-[20px]">
+                          {" "}
+                          <img src={ckeck} alt="" />
+                          20 gB bandwith
+                        </p>
+                        <hr className="w-full" />
+                      </span>
+  
+                      <button className="mt-10 px-6 py-2 bg-[#EA1383] border border-[#EA1383] ml-[60px] rounded-full">
+                        Popular
+                      </button>
+                    </span>
+                  </span>
+                </div> -->
+              </span> */}
