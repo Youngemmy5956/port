@@ -43,6 +43,7 @@ import furn from "../Assets/Screenshot (444).png";
 import redt from "../Assets/Rectangle 46.svg";
 import ReactPaginate from "react-paginate";
 import { Carousel } from "@material-tailwind/react";
+import svgs from "../Assets/th-removebg-preview.png";
 
 export default function Home() {
   const [loading, setloading] = useState(false);
@@ -113,22 +114,49 @@ export default function Home() {
                   <img src={sign} alt="" className="animate-bounce" />
                 </p>
 
+                {/* <span className="flex gap-6 mt-10">
+            <img src={svgs} alt="" />
+            <img src={sign} alt="" />
+            <img src={sign} alt="" />
+            </span> */}
+
                 <button
                   className="text-white font-medium text-[28px] leading-[41px] border-4 
             border-[#691C44] flex py-2 px-2 mt-14 hover:animate-bounce"
                 >
                   Hire Me <img src={arrow} alt="" className="ml-3 mt-3" />{" "}
                 </button>
-                <img src={emmys} alt="" className="animate-ping" />
+
+                <img src={emmys} alt="" className="animate-pulse" />
               </span>
 
               <span>
                 <img src={sign} alt="" className="animate-bounce" />
-                <img src={emmy} alt="" className="animate-pulse" />
+                <img src={emmy} alt="" className="hover:animate-pulse" />
                 <img src={signed} alt="" className="animate-bounce" />
                 <img src={emmys} alt="" className="ml-96 animate-bounce" />
               </span>
             </main>
+
+            <span className="flex gap-2">
+              <span className="flex gap-6 animate-bounce ml-96">
+                <img src={sign} alt="" />
+                <img src={sign} alt="" />
+                <img src={sign} alt="" />
+              </span>
+
+              <span className="flex gap-6 animate-bounce ml-96">
+                <img src={signed} alt="" />
+                <img src={signed} alt="" />
+                <img src={signed} alt="" />
+              </span>
+
+              <span className="flex gap-6 animate-bounce ml-96">
+                <img src={signeds} alt="" />
+                <img src={signeds} alt="" />
+                <img src={signeds} alt="" />
+              </span>
+            </span>
           </section>
 
           <main class="main">
@@ -356,7 +384,7 @@ export default function Home() {
             </section>
           </main>
 
-          <section id="pricing" className="bg-black [#040420] pt-20 pb-24 ">
+          <section id="pricing" className="bg-black [#040420] pt-10 pb-24 ">
             <span className="">
               <span className="">
                 <p className="text-white font-bold text-[30px] leading-[130%] ml-96">
@@ -369,7 +397,7 @@ export default function Home() {
 
             <img src={maps} alt=" " className="ml-[500px]" />
 
-            <span className="w-full flex gap-8 px-[200px] -mt-[500px] ">
+            <span className="w-full flex gap-8 px-[200px] -mt-[520px] ">
               <div className="lg:w-1/3 border-[#943265]  border-4 px-4 py-6">
                 <img src={thumb} alt="" className="w-[100%] h-[40%]" />
                 <span>
@@ -449,13 +477,28 @@ export default function Home() {
                   dolor do amet sint. Velit officia <br /> consequat duis enim
                   velit mollit.{" "}
                 </p>
+
                 <span className="flex gap-6 mt-6 animate-bounce">
-                  <img src={face} alt="" />
-                  <img src={insta} alt="" />
-                  <img src={twit} alt="" />
-                  <img src={lins} alt="" />
-                  <img src={yout} alt="" />
-                  <img src={drib} alt="" />
+                  <a href=" https://www.facebook.com/emmanuel.nwamini.773">
+                    <img src={face} alt="" />{" "}
+                  </a>
+                  <a href="">
+                    <img src={insta} alt="" />
+                  </a>
+                  <a href="https://twitter.com/onyedicach">
+                    {" "}
+                    <img src={twit} alt="" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/emmanuel-godwin-a21081215/">
+                    <img src={lins} alt="" />
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCTj9s1zEqkw1OYtTLhbiTtg">
+                    {" "}
+                    <img src={yout} alt="" />
+                  </a>
+                  <a href="">
+                    <img src={drib} alt="" />
+                  </a>
                 </span>
               </span>
             </span>
@@ -471,7 +514,7 @@ export default function Home() {
               <p className="flex  gap-4">
                 {" "}
                 <img src={mail} alt="" className="animate-pulse" />{" "}
-                nwaminiemmanuel@gmail.com
+                emmanuelgodwin558@gmail.com
               </p>{" "}
               <br />
               <p className="flex  gap-4">
