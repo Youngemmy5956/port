@@ -44,6 +44,8 @@ import redt from "../Assets/Rectangle 46.svg";
 import ReactPaginate from "react-paginate";
 import { Carousel } from "@material-tailwind/react";
 import svgs from "../Assets/th-removebg-preview.png";
+import { IconButton, Typography } from "@material-tailwind/react";
+import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   const [loading, setloading] = useState(false);
@@ -63,6 +65,20 @@ export default function Home() {
     { name: "Blog", link: "/#pricing" },
     { name: "Contact Me", link: "/#contact" },
   ];
+
+  const [active, setActive] = React.useState(1);
+
+  const next = () => {
+    if (active === 10) return;
+
+    setActive(active + 1);
+  };
+
+  const prev = () => {
+    if (active === 1) return;
+
+    setActive(active - 1);
+  };
 
   return (
     <div>
@@ -458,6 +474,31 @@ export default function Home() {
                 </span>
               </div>
             </span>
+
+            <div className="flex items-center gap-8">
+              <IconButton
+                size="sm"
+                variant="outlined"
+                color="blue-gray"
+                onClick={prev}
+                disabled={active === 1}
+              >
+                <ArrowLeftIcon strokeWidth={2} className="h-4 w-4" />
+              </IconButton>
+              <Typography color="gray" className="font-normal">
+                Page <strong className="text-blue-gray-900">{active}</strong> of{" "}
+                <strong className="text-blue-gray-900">10</strong>
+              </Typography>
+              <IconButton
+                size="sm"
+                variant="outlined"
+                color="blue-gray"
+                onClick={next}
+                disabled={active === 10}
+              >
+                <ArrowRightIcon strokeWidth={2} className="h-4 w-4" />
+              </IconButton>
+            </div>
           </section>
 
           <section
